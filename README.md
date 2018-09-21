@@ -3,6 +3,8 @@
 
 fork python  https://github.com/abbeyokgo/youzan_yaofan
 
+demo http://yaofan.88bnb.com
+
 
 ## init system
 
