@@ -51,8 +51,8 @@ class PayController extends Controller
 
         ];
         $response = $client->get($method, $apiVersion, $params);
-        if ($response && $response['response']['qr_trades']) {
-            if (!empty(response['response']['qr_trades'])) {
+        if ($response && @$response['response']['qr_trades']) {
+            if (!empty($response['response']['qr_trades'])) {
                 return $response['response']['qr_trades'][0]['status'] == 'TRADE_RECEIVED';
             }
         }
