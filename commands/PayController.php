@@ -34,7 +34,7 @@ class PayController extends Controller
             if ($this->qrGet($item->qr_id)) {
                 $item->trade_status = 1;
                 $item->save();
-                echo $item->id . "\t" . $item->trade_id . "\t" . $item->money . "\t支付成功" . PHP_EOL;
+                echo $item->order_id . "\t" . $item->trade_id . "\t" . $item->money . "\t支付成功" . PHP_EOL;
             }
         }
     }
@@ -51,8 +51,8 @@ class PayController extends Controller
 
         ];
         $response = $client->get($method, $apiVersion, $params);
-        if ($response && $response['response']['qr_trades']) {
-            if (!empty(response['response']['qr_trades'])) {
+        if ($response && @$response['response']['qr_trades']) {
+            if (!empty($response['response']['qr_trades'])) {
                 return $response['response']['qr_trades'][0]['status'] == 'TRADE_RECEIVED';
             }
         }

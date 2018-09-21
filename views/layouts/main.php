@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>Abbey全自动要饭系统</title>
-    <meta name="keywords" content="Abbey全自动要饭系统,全网首发">
-    <meta name="description" content="Abbey全自动要饭系统,全网首发永久免费提供使用">
+    <title>全自动要饭系统</title>
+    <meta name="keywords" content="全自动要饭系统,全网首发">
+    <meta name="description" content="全自动要饭系统,全网首发永久免费提供使用">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
