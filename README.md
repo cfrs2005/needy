@@ -28,6 +28,13 @@ vim config/params.php
 php yii migrate
 ```
 
+## add crontab plan
+
+```
+crontab -e
+
+*/5 * * * * cd $path;php yii pay/run
+```
 
 
 **准备环境**
