@@ -33,13 +33,12 @@ php yii migrate
 ```
 crontab -e
 
-*/5 * * * * cd $path;php yii pay/run
+*/5 * * * * cd $path;php yii pay/run > /tmp/run.log
 ```
 
 
 **准备环境**
 
-0. 推荐环境：centos7+python2.7，推荐再安装一个宝塔环境
 
 1. 提前注册好[有赞](https://j.youzan.com/tMzSKY)，注册好有赞之后，再注册[有赞云](https://console.youzanyun.com/register)个人开发者
 

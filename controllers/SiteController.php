@@ -161,7 +161,7 @@ class SiteController extends Controller
 
         $params = [
             'qr_name' => "anjing_" . $name,
-            'qr_price' => $price,
+            'qr_price' => $price*100,
             'qr_type' => 'QR_TYPE_DYNAMIC',
         ];
         $response = $client->get($method, $apiVersion, $params);
