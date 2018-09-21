@@ -134,7 +134,7 @@ class SiteController extends Controller
         $order->trade_status = 0;
         $this->setToken();
         $info = $this->qrCreate($out_trade_no, $money);
-        if ($info) {
+        if ($info && @$info['response']) {
             $order->qr_id = $info['response']['qr_id'];
             $order->save();
             $data = [
